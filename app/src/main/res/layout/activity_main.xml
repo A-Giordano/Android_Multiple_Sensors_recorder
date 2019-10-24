@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:text="*Allow access to storage\n*Connect headphones with media button\n*Press Play button when ready to run\n*DON'T LOCK THE SCREEN and put the phone in the pocket\n*Press headphones button every right foot step\n*Ended the session press stop and send email with data " />
+
+    <ImageButton
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/ic_play_circle_outline_black_24dp"
+        android:layout_below="@id/instructions"
+        tools:ignore="VectorDrawableCompat" />
+    <ImageButton
+        android:id="@+id/stop"
+        android:background="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/play"
+        app:srcCompat="@drawable/ic_stop_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+
+</RelativeLayout>
